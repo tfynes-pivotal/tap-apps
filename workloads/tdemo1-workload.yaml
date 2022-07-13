@@ -11,7 +11,7 @@ metadata:
 spec:
   env:
   - name: "foo"
-    value: "bar"
+    value: "bar2"
   source:
     git:
       ref:

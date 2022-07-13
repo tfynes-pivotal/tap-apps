@@ -1,0 +1,19 @@
+apiVersion: kappctrl.k14s.io/v1alpha1
+kind: App
+metadata:
+  name: tap-apps
+  namespace: default
+spec:
+  #serviceAccountName: accelerator-controller-manager
+
+  fetch:
+  - git:
+      url: https://github.com/tfynes-pivotal/tap-apps
+      ref: origin/main
+
+      subPath: workloads
+
+  template:
+  - ytt: {}
+  deploy: 
+  - kapp: {}

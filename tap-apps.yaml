@@ -5,6 +5,7 @@ metadata:
   namespace: default
 spec:
   #serviceAccountName: accelerator-controller-manager
+  serviceAccountName: default
 
   fetch:
   - git:

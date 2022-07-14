@@ -12,7 +12,7 @@ spec:
     - name: BP_NATIVE_IMAGE
       value: "true"
     - name: BP_MAVEN_BUILD_ARGUMENTS
-      value: "-Dmanagement.endpoint.health.probes.add-additional-paths=false -Pnative-buildpack --no-transfer-progress package"
+      value: "--batch-mode -Dmaven.test.skip=true -Pnative-buildpack --no-transfer-progress package"
   source:
     git:
       ref:
